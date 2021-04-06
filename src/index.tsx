@@ -107,6 +107,9 @@ export default class AlphabetList extends React.PureComponent<IAlphabetListProps
           renderItem={this.onRenderItem}
           renderSectionHeader={this.onRenderSectionHeader}
           getItemLayout={this.onGetItemLayout}
+          initialNumToRender={50}
+          maxToRenderPerBatch={50}
+          windowSize={41}
         />
 
         <ListLetterIndex
